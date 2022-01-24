@@ -1,11 +1,17 @@
-import './App.css';
-import Dashboard from './components/Dashboard';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import TextForm from "./components/TextForm";
 
 function App() {
   return (
-    <div>
-      <Dashboard/>
-    </div>
+    <>
+  <NavBar title="TextUtils"  aboutText="About TextUtils"/>
+  <div className="container my-3">
+  <TextForm/>
+  </div>
+
+
+  </>
   );
 }
 
