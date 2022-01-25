@@ -84,35 +84,35 @@ export default function TextForm(props) {
         <button
           type="button"
           onClick={handleUpperCase}
-          className="btn btn-outline-secondary mx-1"
+          className="btn btn-outline-secondary mx-1 my-1"
         >
           Convert to UpperCase
         </button>
         <button
           type="button"
           onClick={handleLowerCase}
-          className="btn btn-outline-secondary mx-1"
+          className="btn btn-outline-secondary mx-1 my-1"
         >
           Convert to LowerCase
         </button>
         <button
           type="button"
           onClick={handleCamleCase}
-          className="btn btn-outline-warning mx-1"
+          className="btn btn-outline-warning mx-1 my-1"
         >
           Convert to CamleCase
         </button>
         <button
           type="button"
           onClick={handleExtraSpaces}
-          className="btn btn-outline-info mx-1"
+          className="btn btn-outline-info mx-1 my-1"
         >
           Remove Extra Space's
         </button>
         <button
           type="button"
           onClick={handleClearText}
-          className="btn btn-outline-danger mx-1"
+          className="btn btn-outline-danger mx-1 my-1"
         >
           Clear Text
         </button>
