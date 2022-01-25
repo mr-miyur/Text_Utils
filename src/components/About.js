@@ -16,13 +16,15 @@ export default function About() {
         versions of Lorem Ipsum. Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Libero, dolorum cumque corrupti, repellendus qui
         doloribus earum commodi at quos voluptas consequuntur minus provident
-        quasi molestiae iure velit tempora minima nobis! </p>
-        <p>Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Distinctio sed ut laborum velit,
-        ducimus, eius vitae hic natus architecto doloribus fugiat quam eum
-        beatae aliquid odit explicabo corporis dignissimos at ab recusandae ad
-        cumque nesciunt quas aspernatur! Fugiat ipsam ut, iure voluptates saepe
-        autem necessitatibus facilis obcaecati maxime dolores reprehenderit.
+        quasi molestiae iure velit tempora minima nobis!{" "}
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed
+        ut laborum velit, ducimus, eius vitae hic natus architecto doloribus
+        fugiat quam eum beatae aliquid odit explicabo corporis dignissimos at ab
+        recusandae ad cumque nesciunt quas aspernatur! Fugiat ipsam ut, iure
+        voluptates saepe autem necessitatibus facilis obcaecati maxime dolores
+        reprehenderit.
       </p>
     </div>
   );

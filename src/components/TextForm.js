@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 
-export default function TextForm() {
+export default function TextForm(props) {
   const [text, setText] = useState("");
 
   const handleUpperCase = () => {
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Text Converted to UpperCase", "success");
   };
 
   const handleLowerCase = () => {
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("Text Converted to LowerCase", "success");
   };
 
   const handleExtraSpaces = () => {
     let newText = text.replace(/ +(?= )/g, "");
     setText(newText);
+    props.showAlert("Removed Extra Space's", "success");
   };
 
   const handleCamleCase = () => {
@@ -33,12 +36,13 @@ export default function TextForm() {
     }
 
     setText(str);
+    props.showAlert("Text Converted to Camel Case", "success");
   };
 
   const handleClearText = () => {
-        setText('');
+    setText("");
+    props.showAlert("Text Cleared", "success");
   };
-
 
   return (
     <>
