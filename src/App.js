@@ -1,17 +1,16 @@
 import "./App.css";
+import About from "./components/About";
 import NavBar from "./components/NavBar";
-import TextForm from "./components/TextForm";
+// import TextForm from "./components/TextForm";
 
 function App() {
   return (
     <>
-  <NavBar title="TextUtils"  aboutText="About TextUtils"/>
-  <div className="container my-3">
-  <TextForm/>
-  </div>
+      <NavBar title="TextUtils" aboutText="About TextUtils" />
 
-
-  </>
+      {/* <TextForm /> */}
+      <About/>
+    </>
   );
 }
 
