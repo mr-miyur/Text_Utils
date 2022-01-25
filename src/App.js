@@ -3,8 +3,8 @@ import "./App.css";
 import About from "./components/About";
 import Alert from "./components/Alert";
 import NavBar from "./components/NavBar";
-
 import TextForm from "./components/TextForm";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -17,15 +17,23 @@ function App() {
 
     setTimeout(() => {
       setAlert(null);
-    }, 1500);
+    }, 1800);
   };
 
   return (
     <>
+    <Router>
       <NavBar title="TextUtils" aboutText="About TextUtils" />
       <Alert alert={alert} />
-      <TextForm showAlert={showAlert} />
-      <About />
+      <Switch>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/">
+          <TextForm showAlert={showAlert} />
+        </Route>
+      </Switch>
+      </Router>
     </>
   );
 }
